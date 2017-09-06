@@ -3,6 +3,7 @@ package com.lantier.kingsoft.anrfinder;
 import android.app.Application;
 
 import com.lantier.kingsoft.blockcanary.block.BlockCanary;
+import com.lantier.kingsoft.blockcanary.block.BlockCanaryContext;
 
 import java.security.AllPermission;
 
@@ -13,7 +14,7 @@ import java.security.AllPermission;
 public class AnrApplication extends Application {
     @Override
     public void onCreate() {
-        BlockCanary.install(this,new AppBlockCanaryContext()).start();
+        BlockCanary.install(this,new BlockCanaryContext()).start();
         super.onCreate();
     }
 }

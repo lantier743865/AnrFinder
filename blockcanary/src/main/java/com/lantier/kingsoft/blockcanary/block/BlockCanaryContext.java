@@ -83,7 +83,7 @@ public class BlockCanaryContext implements BlockInterceptor {
      * @return threshold in mills
      */
     public int provideBlockThreshold() {
-        return 1000;
+        return 5000;
     }
 
     /**

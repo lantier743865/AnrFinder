@@ -3,7 +3,7 @@ package com.lantier.kingsoft.anrfinder;
 
 import android.util.Log;
 
-import com.lantier.kingsoft.blockcanary.block.BlockCanaryContext;
+import com.lantier.kingsoft.develop.block.BlockCanaryContext;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

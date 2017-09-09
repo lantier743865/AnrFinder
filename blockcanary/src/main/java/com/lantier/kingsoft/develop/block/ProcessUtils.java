@@ -1,4 +1,4 @@
-package com.lantier.kingsoft.blockcanary.block;
+package com.lantier.kingsoft.develop.block;
 
 import android.app.ActivityManager;
 import android.content.Context;

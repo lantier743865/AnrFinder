@@ -1,10 +1,10 @@
-package com.lantier.kingsoft.blockcanary.block;
+package com.lantier.kingsoft.develop.block;
 
 import android.os.Environment;
 import android.os.Looper;
 import android.util.Log;
 
-import com.lantier.kingsoft.blockcanary.hprof.Dump;
+import com.lantier.kingsoft.develop.hprof.Dump;
 
 import java.io.File;
 import java.io.FileInputStream;

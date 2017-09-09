@@ -1,4 +1,4 @@
-package com.lantier.kingsoft.blockcanary.hprof;
+package com.lantier.kingsoft.develop.hprof;
 
 import android.content.Context;
 import android.os.Environment;

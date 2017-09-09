@@ -1,4 +1,4 @@
-package com.lantier.kingsoft.blockcanary.block;
+package com.lantier.kingsoft.develop.block;
 
 import android.os.Debug;
 import android.os.SystemClock;

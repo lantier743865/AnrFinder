@@ -81,6 +81,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void install() {
+        //handleException内部建议手动try{自己的异常逻辑}catch (Throwable e){},以防
+        //handleException内部再次抛出异常，导致循环调用handleException
         CrashIntercepter.install(new CrashIntercepter.ExceptionHandler() {
             @Override
             public void handleException(final Thread thread, final Throwable throwable) {
@@ -92,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             throwable.printStackTrace();
 //                            throwable.fillInStackTrace();
                             Toast.makeText(MainActivity.this, "Exception Happend \n "+thread +"\n" +throwable.toString(), Toast.LENGTH_SHORT).show();
-                        } catch (Exception e){
+                        } catch (Throwable e){
                         }
                     }
                 });

@@ -8,14 +8,30 @@
 
     <Button
         android:id="@+id/tv_test"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="sleep anr"
         />
     <Button
         android:id="@+id/tv_io"
         android:text="io anr"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/tv_install"
+        android:text="install intercepter"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/tv_exception"
+        android:text="intercept exception"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/tv_unInstall"
+        android:text="unInstall intercepter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

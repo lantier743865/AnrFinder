@@ -6,6 +6,7 @@
 
 步骤1.将JitPack存储库添加到构建文件中
 将其添加到存储库末尾的根build.gradle中：
+
 	allprojects {
 		repositories {
 			...
@@ -17,6 +18,7 @@
 	
 	
 步骤2.添加依赖关系
+
   	dependencies {
 	        compile 'com.github.lantier743865:AnrFinder:v1.0'
 	}
@@ -26,6 +28,7 @@
 	
 	
 步骤3.Application中初始化，并注册在Manifest.xml
+
 public class DemoApplication extends Application {
     @Override
     public void onCreate() {
@@ -39,6 +42,7 @@ public class DemoApplication extends Application {
 
 步骤4.如果需要改阈值或其他可以继承BlockCanaryContext
 Implement your application BlockCanaryContext context (strongly recommend you to check all these configs)：
+
 
 public class AppBlockCanaryContext extends BlockCanaryContext {
     /**

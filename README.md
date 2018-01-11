@@ -1,10 +1,10 @@
 ##### **AnrFinder**
-####要获得一个Git项目到你的构建：
+要获得一个Git项目到你的构建：
 
 
 
 
-- ####步骤1.将JitPack存储库添加到构建文件中
+- 步骤1.将JitPack存储库添加到构建文件中
 将其添加到存储库末尾的根build.gradle中：
 
 	allprojects {
@@ -17,7 +17,7 @@
 	
 	
 	
-- ####步骤2.添加依赖关系
+- 步骤2.添加依赖关系
 
   	dependencies {
 	        compile 'com.github.lantier743865:AnrFinder:v1.0'
@@ -27,7 +27,7 @@
 	
 	
 	
-- ####步骤3.Application中初始化，并注册在Manifest.xml
+- 步骤3.Application中初始化，并注册在Manifest.xml
 
 ···public class DemoApplication extends Application {
     @Override
@@ -40,7 +40,7 @@
 
 
 
-- ####步骤4.如果需要改阈值或其他可以继承BlockCanaryContext
+- 步骤4.如果需要改阈值或其他可以继承BlockCanaryContext
 ···Implement your application BlockCanaryContext context (strongly recommend you to check all these configs)：
 
 

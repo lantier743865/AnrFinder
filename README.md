@@ -36,15 +36,15 @@
         BlockCanary.install(this, new AppBlockCanaryContext()).start();
     }
 }
-···
+
 
 
 
 - 步骤4.如果需要改阈值或其他可以继承BlockCanaryContext
-···Implement your application BlockCanaryContext context (strongly recommend you to check all these configs)：
+Implement your application BlockCanaryContext context (strongly recommend you to check all these configs)：
 
 
-···public class AppBlockCanaryContext extends BlockCanaryContext {
+public class AppBlockCanaryContext extends BlockCanaryContext {
     /**
      * Config monitor duration, after this time BlockCanary will stop, use
      * with {@code BlockCanary}'s isMonitorDurationEnd
